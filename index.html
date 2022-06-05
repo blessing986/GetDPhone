@@ -10,59 +10,93 @@
 </head>
 
 <body>
-                    <!-- HEADER -->
+
+    <!-- HEADER SECTION-->
+
     <header class="w-full flex justify-between items-center">
 
         <div class="p-4">
             <h1 class="font-bold text-xl">getdphone</h1>
         </div>
-        <!-- 
-        <div class="py-4 flex justify-between"> -->
-        <div>
-            <a class="p-4 md:text-lg" href="">Home</a>
+
+        <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
         </div>
-        <div>
-            <a class="p-4 md:text-lg" href="">Shop</a>
-        </div>
-        <div>
-            <a class="p-4 md:text-lg" href="">About Us</a>
-        </div>
-        <div>
-            <a class="p-4 md:text-lg" href="">Contact Us</a>
-        </div>
-        <div class="flex px-10 items-center">
-            <a href="">
-                <button class="bg-black border rounded text-gray-100 py-1 px-5 text-sm mr-4">Log in</button>
-            </a>
-            <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                </svg>
-            </a>
-        </div>
-        <!-- <div class="px-10">
-           
-        </div> -->
-        </div>
+
+        <nav class="hidden md:flex md:justify-between md:items-center">
+
+            <div>
+                <a class="p-4 md:text-lg" href="">Home</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-lg" href="">Shop</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-lg" href="">About Us</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-lg" href="">Contact Us</a>
+            </div>
+
+            <div class="flex px-10 items-center">
+
+                <a href="">
+                    <button class="bg-black border rounded text-gray-100 py-1 px-5 text-sm mr-4">Log in</button>
+                </a>
+
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </nav>
+
     </header>
-                    <!-- HEADER END -->
+
+    <!-- HEADER END -->
 
 
-                    <!-- USED PHONE SECTION -->
+    <!-- USED PHONE SECTION -->
 
-    <div class="bg-gray-300"> 
-            
-    </div>
-
-    <!-- <section class="flex items-center justify-between bg-gray-300">
+    <section class="flex items-center justify-between bg-gray-300">
         <div class="pl-6">
-            <h1 class="font-bold text-6xl">YOUR HOME OF USED PHONES</h1>
+            <h1 class="font-bold text-6xl italic">YOUR HOME OF USED PHONES</h1>
+
+            <div class="flex items-center rounded border-solid border-2 border-black mt-6 w-2/3">
+                <div class="w-full">
+                    <input class="px-2 py-4 underline decoration-gray-400 w-full" type="text"
+                        placeholder="Search for iPhones, Samsung, Huawei Phones">
+                </div>
+
+                <div class="p-4 bg-gray-600 text-white border-l-2 border-black">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
-        <div class="bg-yellow-400 hidden">
-            <img class="w-full object-cover" src="../GetDPhone/img/Rectangle 8 (1).png" alt="">
+        <div class="md:bg-yellow-400 ">
+            <img class="" src="../GetDPhone/img/usedphone.png" alt="">
         </div>
-    </section> -->
+    </section>
+
+    <!-- USED PHONE SECTION ENDS -->
 
 
 </body>
