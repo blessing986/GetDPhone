@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -14,6 +14,18 @@
                     fontFamily: {
                         Gorditas: ["Gorditas", "cursive"],
                         Lacquer: ["Lacquer", "cursive"],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        contact: '#F3EFEF',
                     }
                 }
             }
@@ -87,24 +99,51 @@
                 <img src="../GetDPhone/img/contactUs.png" alt="">
             </div>
 
-            <div>
+            <!-- <div class="">
                 <img src="../GetDPhone/img/contactUs.png" alt="">
-            </div>
+            </div> -->
         </div>
 
     </section>
 
     <main>
 
-        <section>
+        <!-- send a message section -->
 
-            <div class="flex flex-col">
-                <div>
-                    <h1>Send Us a Message</h1>
+        <section class="">
+
+            <div class="font-Gorditas bg-contact m-6 p-4 rounded">
+
+                <h1 class="font-medium text-2xl lg:text-4xl">Send Us a Message</h1>
+
+                <form action="#" class="flex flex-col mx-1 my-6 font-normal text-base">
+                    
+                    <label for="name" class="mb-2">Name</label>
+                    <input id="name" placeholder="Full Name" type="text" class="p-2">
+
+                    <label for="email" class="my-2">Email address</label>
+                    <input id="email" placeholder="example@me.com" type="email" class="p-2">
+
+                    <label for="phone" class="my-2">Phone Number</label>
+                    <input id="phone" placeholder="Phone number" type="number" class="p-2">
+
+                    <label for="message" class="my-2">Message</label>
+                    <textarea name="" id="message" cols="30" rows="5" class="pl-2 pt-2"
+                        placeholder="Type Something"></textarea>
+                </form>
+
+                <!-- button -->
+
+                <div class="flex justify-center">
+
+                    <div class="bg-black text-gray-100 rounded font-medium px-6 py-2 cursor-pointer mb-20">SEND</div>
+
                 </div>
+
             </div>
 
         </section>
+        <!-- send a message section ends -->
 
     </main>
 
