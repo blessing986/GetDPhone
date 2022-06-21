@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Gorditas: ["Gorditas", "cursive"],
+                        Lacquer: ["Lacquer", "cursive"],
+                    },
+                    colors: {
+                        background: '#E5E5E5',
+                        search: '#545454',
+                        button: '#FF0000',
+                        colori: '#697374',
+                        colorp: '#3F4C48',
+                        colorh: '#FDE4CA',
+                        capacity: '#C4C4C4',
+                        square: '#6A6A6A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Product Inventory for Iphone</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION-->
+
+    <header class="w-full flex justify-between items-center sticky top-0 bg-gray-100">
+
+        <div class="p-4">
+            <h1 class="font-bold font-Lacquer text-xl">getdphone</h1>
+        </div>
+
+        <div class="px-4 cursor-pointer md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+
+        <nav class="hidden md:flex md:justify-between md:items-center font-Gorditas font-bold">
+
+            <div>
+                <a class="p-4 md:text-base" href="index.html">Home</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-base" href="">Shop</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-base" href="about.html">About Us</a>
+            </div>
+
+            <div>
+                <a class="p-4 md:text-base" href="contactUs.html">Contact Us</a>
+            </div>
+
+            <div class="flex px-10 items-center">
+
+                <a href="">
+                    <button class="bg-black border rounded text-gray-100 py-1 px-8 text-base mr-4">Log in</button>
+                </a>
+
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- SEARCH SECTION -->
+
+    <section class="flex items-center justify-center">
+
+        <div class="flex items-center mb-8 mr-8 rounded border-solid border-2 border-black mt-6 w-2/3">
+
+            <div class="w-full">
+                <input class="px-2 py-2 md:py-4 w-full" type="text"
+                    placeholder="Search for iPhones, Samsung, Huawei Phones">
+            </div>
+
+            <div class="p-2 md:p-4 bg-search text-white border-l-2 border-black">
+
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION ENDS -->
+
+    <main>
+
+        <!-- Products (iPhone) section -->
+
+        <section class="flex flex-col md:flex-row items-center justify-between">
+
+            <div class="lg:mr-20">
+
+                <img src="../GetDPhone/img/Products/iphone.png" alt="" class="sm:h-80 lg:h-auto">
+
+                <div class="flex mt-4">
+                    <div class="bg-square w-20 h-20 mx-2 lg:ml-4 lg:w-32 lg:h-32"></div>
+                    <div class="bg-square w-20 h-20 mr-2 lg:w-32 lg:h-32"></div>
+                    <div class="bg-square w-20 h-20 lg:w-32 lg:h-32"></div>
+                </div>
+
+            </div>
+
+            <div class="font-Gorditas mt-6 mr-12">
+
+                <h1 class="text-3xl font-bold">iPHONE 11 PRO MAX</h1>
+
+                <p class="mt-10 font-medium mb-1">Choose your capacity</p>
+
+                <div class="flex">
+
+                    <button class="bg-capacity rounded font-bold mr-4 px-4 py-2"> 64GB <br> <span
+                            class="text-xs font-thin">From N500,000</span> </button>
+
+                    <button class="bg-capacity rounded font-bold px-4 py-2"> 64GB <br> <span
+                            class="text-xs font-thin">From N500,000</span> </button>
+
+                </div>
+
+                <p class="mt-8 mb-1">Choose a color</p>
+
+                <div class="flex">
+                    <div class="rounded-full bg-colori w-6 h-6 mr-2"></div>
+                    <div class="rounded-full bg-colorp w-6 h-6 mr-2"></div>
+                    <div class="rounded-full bg-colorh w-6 h-6"></div>
+                </div>
+
+                <p class="mt-10">Condition</p>
+
+                <p class="text-xs">Great</p>
+
+                <p class="mt-10 mb-1">Quantity</p>
+
+                <select name="quantity" id="quantity" class="border border-black border-2">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                </select>
+
+                <div class="flex justify-center flex-col items-center">
+
+                    <p class="text-4xl font-bold mb-2">N500,000</p>
+
+                    <button class="bg-black text-white px-20 py-1 lg:py-2 rounded font-bold text-xl lg:text-base">Add to
+                        Cart</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Products (iPhone) section ends -->
+
+    </main>
