@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Login Page</title>
 </head>
 
@@ -63,6 +64,44 @@
     </header>
 
     <!-- HEADER END -->
+
+    <!-- LOGIN SECTION -->
+
+    <section class="flex">
+
+        <div class="w-1/2">
+            <img src="../GetDPhone/img/login.png" alt="">
+        </div>
+
+        <div class="py-12 mt-12 w-1/2 flex flex-col items-center px-10">
+
+            <div class="flex">
+                <h2 class="text-3xl mr-40 border-b-2 border-red-500 cursor-pointer">LOGIN</h2>
+                <h2 class="text-3xl text-gray-300 cursor-pointer">SIGNUP</h2>
+            </div>
+
+
+            <form action="#" class="flex w-full flex-col mt-4">
+
+                <label for="email" class="mb-2">Email:</label>
+                <input type="text" placeholder="Email" id="email" class="border p-2 mb-4">
+
+                <label for="password" class="mb-2">Password:</label>
+                <input type="password" placeholder="Password" id="password" class="border p-2">
+
+
+                <div class="flex justify-center items-center">
+                    <button class="mt-2 rounded bg-black text-white px-6 py-2">LOGIN</button>
+                    <p class="text-red-500 ml-2 cursor-pointer">Forget Password?</p>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- LOGIN SECTION ENDS -->
 
 </body>
 
