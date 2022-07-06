@@ -6,68 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Gorditas: ["Gorditas", "cursive"],
+                    },
+                }
+            }
+        }
+    </script>
     <title>Checkout (Shipping)</title>
 </head>
 
 <body class="font-Gorditas">
 
-    <!-- HEADER SECTION-->
+    <!-- Shipping Section -->
 
-    <header class="w-full flex justify-between items-center sticky top-0 bg-gray-100">
+    <section class="mx-4 mt-16">
 
-        <div class="p-4">
-            <h1 class="font-bold font-Lacquer text-xl">getdphone</h1>
-        </div>
-
-        <div class="px-4 cursor-pointer md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </div>
-
-        <nav class="hidden md:flex md:justify-between md:items-center font-Gorditas font-bold">
-
-            <div>
-                <a class="p-4 md:text-base" href="index.html">Home</a>
-            </div>
-
-            <div>
-                <a class="p-4 md:text-base" href="">Shop</a>
-            </div>
-
-            <div>
-                <a class="p-4 md:text-base" href="about.html">About Us</a>
-            </div>
-
-            <div>
-                <a class="p-4 md:text-base" href="contactUs.html">Contact Us</a>
-            </div>
-
-            <div class="flex px-10 items-center">
-
-                <a href="login.html">
-                    <button class="bg-black border rounded text-gray-100 py-1 px-8 text-base mr-4">Log in</button>
-                </a>
-
-                <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path
-                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                    </svg>
-                </a>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-    <!-- HEADER END -->
-
-    <section class="mx-4">
-
-        <div class="flex justify-between text-xl border-b border-black">
+        <div class="flex justify-between text-xl border-b border-black mb-6">
             <h1 class="font-bold border-b-4 border-black">Shipping</h1>
             <h1 class="text-gray-400">Payment</h1>
             <h1 class="text-gray-400">Confirmation</h1>
@@ -165,15 +124,18 @@
         </div>
 
         <div class="flex justify-center mt-6">
-            <button class="px-10 py-2 mt-10 bg-black text-white rounded font-bold tracking-wider">Continue to Payment</button>
+            <button class="px-10 py-2 mt-10 bg-black text-white rounded font-bold tracking-wider text-xl">Continue to
+                Payment</button>
         </div>
 
     </section>
 
-    
-     <!-- Footer -->
+    <!-- Shipping Section ends -->
 
-     <footer class="bg-gray-900 text-gray-100">
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-900 text-gray-100">
 
         <div class="flex flex-col lg:flex-row justify-between mt-40 px-12 py-8">
 
